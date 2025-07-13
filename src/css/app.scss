@@ -1,1 +1,144 @@
 // app global css in SCSS form
+
+// Global dark theme enhancements
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: 100vh;
+}
+
+// Custom scrollbar for dark theme
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// Enhanced card styling for dark theme
+.q-card {
+  &.dark {
+    background: rgba(45, 45, 45, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+}
+
+// Button enhancements
+.q-btn {
+  &.q-btn--outline {
+    border-color: rgba(255, 255, 255, 0.3);
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// Slider enhancements
+.q-slider {
+  .q-slider__track {
+    opacity: 0.8;
+  }
+  
+  .q-slider__thumb {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// File input enhancements
+.q-file {
+  .q-field__control {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+// Select enhancements
+.q-select {
+  .q-field__control {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+// Dialog enhancements
+.q-dialog__inner {
+  .q-card {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+// Tooltip enhancements
+.q-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Animation utilities
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// Responsive utilities
+@media (max-width: 768px) {
+  .q-card {
+    margin: 8px;
+  }
+  
+  .q-toolbar {
+    padding: 0 12px;
+  }
+}
+
+// Retro/bitmap theme colors
+:root {
+  --bitmap-primary: #00ff41;
+  --bitmap-secondary: #ff0080;
+  --bitmap-accent: #ffff00;
+  --bitmap-dark: #1a1a1a;
+  --bitmap-positive: #00ff41;
+  --bitmap-negative: #ff0080;
+  --bitmap-info: #00bfff;
+  --bitmap-warning: #ffff00;
+}
+
+// Custom primary color override for bitmap theme
+.text-primary {
+  color: var(--bitmap-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--bitmap-primary) !important;
+}
+
+.q-btn--standard.q-btn--rectangle.bg-primary {
+  color: #000 !important;
+}
