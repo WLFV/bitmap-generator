@@ -15,8 +15,6 @@ A modern bitmap image processing tool built with Quasar Framework and Vue 3. Con
 
 🚀 **[View Live Demo](https://WLFV.github.io/bitmap-generator/)**
 
-*Replace `yourusername` with your actual GitHub username*
-
 ## Development Setup
 
 ### Prerequisites
