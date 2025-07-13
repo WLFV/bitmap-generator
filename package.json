@@ -1,8 +1,8 @@
 {
   "name": "bitmap",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "bitmap",
+  "description": "A powerful bitmap generator tool for creating custom bitmap images",
+  "productName": "Bitmap Generator",
   "author": "WLFV",
   "type": "module",
   "private": true,
