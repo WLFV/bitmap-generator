@@ -26,7 +26,7 @@ A modern bitmap image processing tool built with Quasar Framework and Vue 3. Con
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/bitmap-generator.git
+git clone https://github.com/wlfv/bitmap-generator.git
 cd bitmap-generator
 
 # Install dependencies
@@ -69,7 +69,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 4. **Automatic deployment:**
    - The GitHub Action will automatically build and deploy your app
-   - Your app will be available at: `https://yourusername.github.io/bitmap-generator/`
+   - Your app will be available at: `https://wlfv.github.io/bitmap-generator/`
    - Check the "Actions" tab in your repository to monitor deployment status
 
 ### Manual Deployment (Alternative)
